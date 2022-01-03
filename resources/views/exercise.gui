@@ -1,0 +1,59 @@
+<svg id="view-exercise" display="none">
+  <use id="subviewGps" href="#subview-gps" />
+
+  <use id="subviewClock1" href="#subview-clock" />
+
+  <svg id="boxStats">
+    <svg class="item" display="none">
+      <text id="lblDistance" class="big-number">000</text>
+      <text id="lblDistanceUnits" class="big-label">total kilometers</text>
+    </svg>
+
+    <svg class="item" display="none">
+      <text id="lblSpeed" class="small-number row-1">000</text>
+      <text id="lblSpeedUnits" class="small-label">current kph</text>
+      <text id="lblSpeedAvg" class="small-number row-2">000</text>
+      <text id="lblSpeedAvgUnits" class="small-label">average kph</text>
+    </svg>
+
+    <svg class="item" display="none">
+      <text id="lblActiveTime" class="big-number">00:00</text>
+      <text class="big-label">elapsed time</text>
+    </svg>
+
+    <svg class="item" display="none">
+      <use id="subviewAltitude" href="#subview-altitude" />
+    </svg>
+
+    <svg class="item" display="none">
+      <use id="subviewHRM" href="#subview-hrm" />
+    </svg>
+
+    <svg class="item" display="none">
+      <text id="lblCalories" class="bigest-number">0</text>
+      <text class="bigest-label">calories</text>
+    </svg>
+
+    <rect id="touch" width="100%" height="100%" opacity="0" pointer-events="all" />
+  </svg>
+
+  <text id="lblStatus">connecting...</text>
+  
+  <use id="btnFinish" href="#combo-button-upper-right" display="none" fill="#14cd6e" shortcut="none">
+    <set href="combo-button-icon" attributeName="href"
+          to="images/icons/btn_combo_flag_p.png" />
+    <set href="combo-button-icon-press" attributeName="href"
+          to="images/icons/btn_combo_flag_p.png" />
+    <set href="combo-button-stroke" attributeName="display" to="inline" />
+  </use>
+
+  <use id="btnToggle" href="#combo-button-lower-right" display="none" fill="#14cd6e" shortcut="none">
+    <set href="combo-button-icon" attributeName="href"
+          to="images/icons/btn_combo_pause_press_p.png" />
+    <set href="combo-button-icon-press" attributeName="href"
+          to="images/icons/btn_combo_pause_press_p.png" />
+    <set href="combo-button-stroke" attributeName="display" to="inline" />
+  </use>
+
+  <use id="subviewPopup" href="#subview-popup" display="none" />
+</svg>
